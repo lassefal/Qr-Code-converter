@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QR Code Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>QR Code Generator</h1>
+
+      <p class="subtitle">
+        Create a QR code from any text or URL
+      </p>
+
+      <div class="input-section">
+
+        <label for="qrText">
+          Enter text or URL
+        </label>
+
+        <textarea
+          id="qrText"
+          placeholder="https://example.com"
+          rows="4"
+        ></textarea>
+
+      </div>
+
+      <div class="buttons">
+
+        <button id="generateBtn" class="generate-btn">
+          Generate QR Code
+        </button>
+
+        <button id="clearBtn" class="clear-btn">
+          Clear
+        </button>
+
+      </div>
+
+      <div class="qr-section">
+
+        <div id="qrcode"></div>
+
+        <p id="message">
+          Your QR code will appear here
+        </p>
+
+      </div>
+
+      <button id="downloadBtn" class="download-btn">
+        Download QR Code
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
